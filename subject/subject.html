@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>이동현의 개인공간</title>
+
+	<script>
+
+    /* 클릭된 li 에 대응하는 이미지를 출력해줄 함수 */
+    function showImage(e) {
+    	
+    	if(e.id == "MERCURY"){
+    		document.getElementById("img").src = "./images/mercury.jpg";
+    		document.getElementById("text").innerHTML="<strong>수성</strong><br /><br />태양의 첫째 행성<br /><br />태양에서 가장 가까이 있는 행성인 수성은 언제나 태양 옆에 붙어 다니기 때문에 관측하기가 쉽지 않다. 수성은 해가 진 직후 서쪽 하늘과, 해가 뜨기 직전 동쪽 하늘에서만 볼 수가 있다. 그리고 망원경으로 수성을 보면 달과 같이 그 위상이 변하는 것을 알 수 있다.표면의 모습도 달과 매우 비슷하다.";
+    	}else if(e.id == "VENUS"){
+    		document.getElementById("img").src = "./images/venus.jpg";
+    		document.getElementById("text").innerHTML="<strong>금성</strong><br /><br />지구의 형제 행성<br /><br />금성은 우리가 흔히 '샛별'이라고 부르는 행성으로 해 뜨기 전 동쪽 하늘이나 해진 후 서쪽 하늘에서 보인다. 금성은 그냥 보면 하나의 점처럼 보이지만, 망원경으로 보면 달처럼 그 모습이 변하는 위상을 가지고 있다. 금성의 대기는 두꺼운 이산화탄소로 덮여 있기 때문에 망원경으로는 표면이 보이지 않는다. 그래서 파장이 긴 전파를 이용해 관측하고 있다.";
+    	}else if(e.id == "EARTH"){
+    		document.getElementById("img").src = "./images/earth.jpg";
+    		document.getElementById("text").innerHTML="<strong>지구</strong><br /><br />푸른 행성<br /><br />우리가 살고 있는 푸른 행성이 바로 지구이다. 우주에서 봤을 때 푸른색의 바다, 녹색의 산과 갈색의 흙에 흰색의 구름이 조화를 이루고 있는 아름다운 행성이다. 지구의 나이는 약 46억 년이라고 알려져 있다. 원시 지구는 태양 주위의 미행성들이 뭉쳐져서 탄생한 것으로추측하고 있다. 탄생 직후의 지구는 고온의 마그마 바다였으나 미행성의 충돌이 잠잠해지면서 냉각하기 시작하여 얇은 지각이 형성된다. 이산화탄소가 주성분이었던 원시 대기에 비가 내림으로써 바다가 형성되고, 이산화탄소가 바다에 녹아 하늘이 맑아진다.약 35억 년에서 25억 년 전쯤에는 지표의 온도가 현재 온도와 가까워졌고 지구 환경도 안정기에 접어든다. 그리고 35억 년 전 비로소 지구에 원시 생명이 탄생한다. 이것이 과학자들이 추측하는 지구 탄생의 이야기다.";
+    	}else if(e.id == "MARS"){
+    		document.getElementById("img").src = "./images/mars.jpg";
+    		document.getElementById("text").innerHTML="<strong>화성</strong><br /><br />제2의 지구<br /><br />화성은 영화와 소설의 소재로도 많이 사용되는, 태양계 행성 중 우리의 관심을 가장 많이 끈 행성이다. 지구에 가까이 있고, 여러 가지 에피소드에 의해 생명의 존재 가능성이 제기되어 신비감과 공포감을 동시에 가져다준 행성이 바로 화성이다. 이러한 관심은 마리너 6, 7, 8, 9호, 바이킹 1, 2호 등 많은 우주선들의 화성 탐사로 이어졌으며, 그 결과 제2의 지구, 화성에 대한풍부한 자료를 확보함으로써 화성 연구에 많은 진척을 가져왔다.";
+    	}else if(e.id == "JUPITER"){	
+    		document.getElementById("img").src = "./images/jupiter.jpg";
+    		document.getElementById("text").innerHTML="<strong>목성</strong><br /><br />태양계의 왕자<br /><br />태양계의 5번째 궤도를 돌고 있는 목성은 태양계에서 가장 거대한 행성이다. 목성은 태양계 여덟 개 행성을 모두 합쳐 놓은 질량의 2/3 이상을 차지하고 지름이 약 14만 3,000km로 지구의 약 11배에 이른다. 이 거대한 목성은 육안으로도 쉽게 발견할 수 있을 만큼 밝은데, 가장 밝을 때는 -2.5등급을 기록하기도 했다. 또한, 목성은 엷은 고리를 가지고 있으며 유명한 네 개의 갈릴레이 위성을 포함해 많은 위성을 지니고 있다.";
+    	}else if(e.id == "SATURN"){
+    		document.getElementById("img").src = "./images/saturn.jpg";
+    		document.getElementById("text").innerHTML="<strong>토성</strong><br /><br />아름다운 고리를 가진 행성<br /><br />아름다운 고리를 가진 토성은 태양계에서 가장 많은 사랑을 받는 행성이다. 토성의 고리는 1610년 갈릴레이(Galileo Galilei)에 의해 처음 관측되었다. 하지만, 망원경의 해상도가 낮아 확실한 모양을 몰랐다. 훗날 그가 죽은 뒤 약 50년 후인 1656년 네덜란드의 천문학자인 호이겐스(하위헌스, Christiaan Huygens)에 의해 그것이 고리라는 것이 밝혀졌다. 토성의 신비는 태양계 탐사 우주선 보이저(Voyager) 1,2호에 의해 많이 밝혀졌다. 지금까지 밝혀진 토성의 위성은 수십 개이며, 그 가운데 신비한 위성 타이탄(titan)이 있다. 토성은 목성에 이어 태양계에서 두 번째로 크며, 직경은 지구의 약 9.5배, 질량은 약 95배이다. 태양으로부터 14억km 정도 떨어진 거리에서 약 9.7km/s의 속도로 공전하는 데, 이는 지구 시간으로 대략 29.6년이나 걸린다.";
+    	}else if(e.id == "URANUS"){
+    		document.getElementById("img").src = "./images/uranus.jpg";
+    		document.getElementById("text").innerHTML="<strong>천왕성</strong><br /><br />망원경으로 발견된 최초의 행성<br /><br />토성의 궤도를 넘어서면 청록색의 행성 천왕성이 존재한다. 천왕성은 1781년 4월 천문학자이자 음악가인 윌리엄 허셜(William Herschel)에 의해 처음으로 발견되었다. 1781년 3월 그는 쌍둥이자리 근처에서 이상한 천체를 발견하였으나 이를 태양에서 멀리 떨어져 있어 꼬리가 아직 발달되지 않은 혜성일 것이라 생각했다. 이후 꾸준한 관측결과 이 천체가 태양을 중심으로 공전하는 행성인 것을 확인하였다. 천왕성은 육안이 아닌 망원경으로 발견된 최초의 행성이며, 발견된 궤도위치가 독일의 천문학자 요한 보데(Johann Elert Bode)가 주장한 보데의 법칙을 증명해주었다는 점에서 더 유명해졌다.<br /><br />천왕성은 반지름 25,559km의 구형으로서 토성의 지름의 약 1/2보다 조금 작고 목성 지름의 약 1/3에 해당한다. 그러나 지구보다는 약 4배나 크다. 망원경으로 보아도 아주 작고 흐려 크기를 결정할 수 없었던 천왕성의 지름을 측정한것은 1977년 어떤 행성이 다른 별의 표면을 통과하는 엄폐(掩蔽)현상이 이 천왕성에게 나타났기 때문이다. 이때 천왕성이 움직이는 속도와 별을 가리는 시간을 측정하여 계산한 결과 지금 우리가 알고 있는 천왕성의 지름을 계산할 수 있었던 것이다. 천왕성의 질량은 목성, 토성보다 작긴 하지만 지구의 약 15배에 이르는 8.7×1025kg이다.";
+    	}else{
+    		document.getElementById("img").src = "./images/neptune.jpg";
+    		document.getElementById("text").innerHTML="<strong>해왕성</strong><br /><br />계산과 예측으로 발견된 행성<br /><br />윌리엄 허셜(William Herschel)이 1781년 토성 궤도 밖에서 천왕성을 발견한 뒤 그 궤도를 추적하던 많은 천문학자들은 원인을 알 수 없는 섭동이 천왕성 궤도에 영향을 주는 것을 알았고, 이에 천왕성너머 다른 행성이 존재할 수 있다는 생각을 갖기 시작했다.<br /><br />1843년 영국의 케임브리지 대학의 존 애덤스(John Adams)는 졸업을 앞두고 천왕성 너머에 미지의 행성이 존재할 것이라고 주장했다. 그러나 아직 어린 학생이라는 이유로 그의 의견은 영국의 왕립 천문학자들에 의해 무시되었고, 1845년 프랑스에서는 과학자인 위르뱅 르베리에(Urbain Leverrier)가 애덤스와 같은 결론을 얻어 과학 잡지에 발표했다. 1846년 독일의 요한 갈레(Johann Galle)는 이들이 예측한 위치에서 8등급의 별을 발견하였으며, 이것은 행성이었다. 당시 경쟁 국가였던 영국과 프랑스 사이에는 이 해왕성 발견의 공로에 대해 치열한 논쟁이 오갔지만 결국 해왕성 발견의 최대 업적은 애덤스와 르베리에에게 함께 돌아갔다.";
+    	}
+      
+
+    }
+ 	</script>
+
+	<style>
+		
+		html{
+		background-image: url('background.jpg');
+		background-size: cover;
+		}
+
+		*{
+			margin: 30;
+			font-family: "맑은 고딕", sans-serif;
+		}
+
+		body{
+			width: 950px;
+			margin: 0px auto;
+			color : white;
+		}
+
+		header{
+			background-color:DarkOrchid;
+			opacity: 0.8;
+		}
+
+		h1{
+
+			color: white;
+		}
+		
+
+		li{
+			list-style: none;
+			
+		}
+
+		ul{
+			background-color: MediumSlateBlue;
+			opacity:0.7;
+		}
+
+		.navi{
+			margin : 15px 0px;
+			border-top : 2px solid #5e5e5e;
+			border-bottom: 2px solid #5e5e5e;
+			height: 60px
+		}
+
+		.navi>ul>li{
+			display: inline-block;
+			padding : 5px 35px;
+			color: LightYellow;
+			font-weight: bold;
+		}
+
+		/* navi에 마우스를 올렸을 때 */
+		.navi>ul>li:hover{    
+			background-color: blue;
+		}
+
+
+		#bottom{
+
+		}
+
+		.box{
+			overflow: hidden;
+		}
+
+		footer{
+			margin: 40px 40px;
+			padding: 20px;
+			clear: both;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="top">
+	<header>
+		<center><a href="subject.html"><h1>태양계의 행성들</h1></a></center>
+	</header>
+
+	<nav>
+			<div class="navi">
+				<ul>
+					<li id="MERCURY" onclick="showImage(this)">수성</li>
+					<li id="VENUS" onclick="showImage(this)">금성</li>
+					<li id="EARTH" onclick="showImage(this)">지구</li>
+					<li id="MARS" onclick="showImage(this)">화성</li>
+					<li id="JUPITER" onclick="showImage(this)">목성</li>
+					<li id="SATURN" onclick="showImage(this)">토성</li>
+					<li id="URANUS" onclick="showImage(this)">천왕성</li>
+					<li id="NEPTUNE" onclick="showImage(this)">해왕성</li>
+				</ul>
+	</nav>
+
+	</div>
+	<center><strong>메뉴를 클릭하면 해당 행성의 이미지가 나옵니다!<strong><br /><br/></center>
+	<div id="mid" align="center">
+
+		<img id="img" src="" />
+		<p id="text" style="text-align: center"></p>
+		<br /><br /><br /><br />
+		<hr /><br />
+	</div>
+
+
+	<div id="news">
+		<h1>명왕성 태양계에서 퇴출되다...!!!</h1>
+		<img id="img2" src="./images/new.png" />
+		<p class="box" style="max-width: 300; max-height: 300">카이퍼 띠에 있는 왜소행성 가운데 하나. 1930년 발견 이후 태양계의 9번째 행성으로서 명왕성(冥王星)으로 불렸으나, 2006년 국제천문연맹(IAU)의 행성분류법이 바뀜에 따라 행성의 지위를 잃고 왜소행성(dwarf planet)으로 분류되었다.</p>
+		<br /><br />
+		<hr /><br />
+	</div>
+
+	<div id="bottom" align="center">
+		<strong>광활한 우주</strong><br /><br />
+		<video src="1.mp4" controls autoplay loop></video>
+	</div>
+
+</body>
+<footer style="text-align: right;">
+<hr />
+<br /><b>Copyright@LeeDongHyeon</b>
+</footer>
+</html>
