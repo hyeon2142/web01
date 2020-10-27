@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		let tel = "1234-567" // 전역변수
+		{
+			var age; // 변수 선언
+			age = 25; // 값을 할당
+			console.log(age);
+		}
+
+		{
+			let name;           // let은 무조건 선언부터 해야함
+			name="이동현";
+			console.log(name);
+		}
+		console.log("값 =>" + tel);
+		console.log("값 =>" + name);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
